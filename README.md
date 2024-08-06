@@ -28,17 +28,24 @@ This will open the Jupyter Notebook interface in your web browser. From there, y
 
 ## Data Source and Pre-processing Guide
 
-The raw TEA-seq dataset from [Swanson et al. (2021)](https://elifesciences.org/articles/63632), used to generate Figures 1 and 2 of our paper, is available [here](https://www.dropbox.com/scl/fo/yu1vydyjhab0yxs9kyhoo/AOQwV-4cDz9GtjTRHmNawNg?rlkey=j7bbsfiwihwrzqzkqh4hj3e87&st=kb766idz&dl=0). 
+The raw TEA-seq dataset from [Swanson et al. (2021)](https://elifesciences.org/articles/63632), used to generate Figures 1 and 2 of our paper, is available [here](https://www.dropbox.com/scl/fo/yu1vydyjhab0yxs9kyhoo/AOQwV-4cDz9GtjTRHmNawNg?rlkey=j7bbsfiwihwrzqzkqh4hj3e87&st=kb766idz&dl=0).
 
 The dataset includes:
-- `adt_counts.csv`: Provides the raw ADT counts (Protein modality).
-- `feature_matrix.h5`: Provides the raw RNA and ATAC counts.
+- `adt_counts.csv`: Contains raw ADT counts (Protein modality).
+- `feature_matrix.h5`: Contains raw RNA and ATAC counts.
 
-These datasets need to be pre-processed using standard Seurat pre-processing techniques, as described [here](https://www.sciencedirect.com/science/article/pii/S0092867421005833). This includes removing cells and genes with extremely low expression or highly expressed mitochondrial genes. Furthermore, the RNA and ATAC counts are normalized and appropriately standardized after applying $\log 1p$ transform.
+These datasets need to be pre-processed using standard Seurat techniques, as described [here](https://www.sciencedirect.com/science/article/pii/S0092867421005833). The pre-processing steps involve:
 
+- **Filtering**: Removing cells and genes with extremely low expression or highly expressed mitochondrial genes.
+- **Normalization and Transformation**: Normalizing RNA and ATAC counts and applying a $\log(1 + x)$ transformation.
+- **Selection**: Choosing highly variable genes, ATAC reads, and proteins for analysis.
+
+For a detailed explanation of the pre-processing steps, please refer to our paper.
 To pre-process the data, run the provided R script `Pre-processing_tea_seq_data.R` located in the `Codes` folder. After running the script you will get the following pre-processed datasets.
 
 - `cleaned_adt_tea_seq.csv`: Provides the pre-processed ADT counts (Protein modality).
-- `feature_matrix.h5`: Provides the raw RNA and ATAC counts.
+- `cleaned_atac_reads_tea_seq.h5ad`: Provides the pre-processed ATAC counts.
+- `cleaned_rna_reads_tea_seq.h5ad`: Provides the pre-processed RNA counts.
+- `cleaned_cell_labels_meta_tea_seq.csv`: Provides the cell-type of the cells used in the analysis.
 
 
