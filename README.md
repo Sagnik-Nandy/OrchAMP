@@ -28,4 +28,4 @@ This will open the Jupyter Notebook interface in your web browser. From there, y
 
 ## Installation Guide
 
-The raw TEA-seq dataset from [Swanson et. al. (2021)](https://elifesciences.org/articles/63632) used to generate Figures 1 and 2 of our paper is provided in (https://www.dropbox.com/scl/fo/yu1vydyjhab0yxs9kyhoo/AOQwV-4cDz9GtjTRHmNawNg?rlkey=j7bbsfiwihwrzqzkqh4hj3e87&st=kb766idz&dl=0).
+The raw TEA-seq dataset from [Swanson et. al. (2021)](https://elifesciences.org/articles/63632) used to generate Figures 1 and 2 of our paper is provided [here](https://www.dropbox.com/scl/fo/yu1vydyjhab0yxs9kyhoo/AOQwV-4cDz9GtjTRHmNawNg?rlkey=j7bbsfiwihwrzqzkqh4hj3e87&st=kb766idz&dl=0).
