@@ -34,6 +34,11 @@ The dataset includes:
 - `adt_counts.csv`: Provides the raw ADT counts (Protein modality).
 - `feature_matrix.h5`: Provides the raw RNA and ATAC counts.
 
-These datasets need to be pre-processed using standard Seurat pre-processing techniques, as described [here](https://www.sciencedirect.com/science/article/pii/S0092867421005833).
+These datasets need to be pre-processed using standard Seurat pre-processing techniques, as described [here](https://www.sciencedirect.com/science/article/pii/S0092867421005833). This includes removing cells and genes with extremely low expression or highly expressed mitochondrial genes. Furthermore, the RNA and ATAC counts are normalized and appropriately standardized after applying $\log 1p$ transform.
 
-To pre-process the data, run the provided R script `Pre-processing_tea_seq_data.R` located in the `Codes` folder.
+To pre-process the data, run the provided R script `Pre-processing_tea_seq_data.R` located in the `Codes` folder. After running the script you will get the following pre-processed datasets.
+
+- `cleaned_adt_tea_seq.csv`: Provides the pre-processed ADT counts (Protein modality).
+- `feature_matrix.h5`: Provides the raw RNA and ATAC counts.
+
+
