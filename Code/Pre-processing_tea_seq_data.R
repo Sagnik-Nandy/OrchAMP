@@ -6,7 +6,6 @@ library(glue)
 library(dplyr)
 library(Seurat)
 require(RColorBrewer)
-#library(Signac)
 library(EnsDb.Hsapiens.v86)
 library(ggplot2)
 library(cowplot)
@@ -30,8 +29,6 @@ qual_col_pals = brewer.pal.info[brewer.pal.info$category == 'qual',]
 col_vector = unlist(mapply(brewer.pal, qual_col_pals$maxcolors, rownames(qual_col_pals)))
 
 #########################################
-
-setwd("/Users/sagnik/Dropbox/PhD Projects/Current_Projects_with_Seniors/AMP+Multimodal_Data/github_repo/Data/")
 
 
 # RNA and ATAC Expression Matrix
