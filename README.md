@@ -1,4 +1,4 @@
-# Implementation of multimodal atlas building via Orchestrated AMP and prediction of cell states of query cells using the multimodal atlas.
+# Multimodal Atlas Building and Query prediction using Orchestrated Approximate Message Passing
 
 This GitHub repository contains codes for implementing the techniques for building multimodal cell atlas and querying new subjects that are only partially observed via the algorithms proposed in [Multimodal data integration and cross-modal querying via orchestrated approximate message passing](https://arxiv.org/abs/2407.19030) by Nandy and Ma (2024). 
 
