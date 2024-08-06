@@ -1,4 +1,4 @@
-# Codes for implementing atlas building and cross-modal query prediction described in 'Multimodal data integration and cross-modal querying via orchestrated approximate message passing' by Nandy and Ma (2024)
+# Implementation of multimodal atlas building and cross-modal prediction of cell states of query cells described in 'Multimodal data integration and cross-modal querying via orchestrated approximate message passing' by Nandy and Ma (2024)
 
 This GitHub repository contains codes for implementing the techniques for building multimodal cell atlas and querying new subjects that are only partially observed via the algorithms proposed in [Multimodal data integration and cross-modal querying via orchestrated approximate message passing](https://arxiv.org/abs/2407.19030) by Nandy and Ma (2024). 
 
@@ -48,13 +48,15 @@ To pre-process the data, run the provided R script `Pre-processing_tea_seq_data.
 - `cleaned_rna_reads_tea_seq.h5ad`: Provides the pre-processed RNA counts.
 - `cleaned_cell_labels_meta_tea_seq.csv`: Provides the cell-type of the cells used in the analysis.
 
-## Multimodal cell atlas building using OrchAMP (Algorithm 1)
-
 ## Multimodal Cell Atlas Building Using OrchAMP (Algorithm 1)
 
 Using the cleaned datasets, you can build a multimodal cell atlas as described in Section 3.2 of our paper by running the Jupyter notebook `tea_seq_atlas_building.ipynb` located in the `Codes` folder. The OrchAMP atlas is compared with the atlas produced by the WNN-based integration technique of [Hao et al. (2021)](https://www.sciencedirect.com/science/article/pii/S0092867421005833).
 
-To compute the PCA embeddings required for the WNN-based integration technique, run the notebook `tea_seq_atlas_building_wnn.ipynb`.
+To compute the PCA embeddings required for the [WNN-based integration technique](https://www.sciencedirect.com/science/article/pii/S0092867421005833), run the notebook `tea_seq_atlas_building_wnn.ipynb`.
 
 To generate the UMAP plot shown in Figure 1 of our paper, execute the R script `tea_seq_atlas_plotting.R` found in the `Codes` folder.
+
+## Querying multimodal atlas with new cells (Algorithm 2)
+
+One can build point predictions of the embeddings of a new query cell  
 
