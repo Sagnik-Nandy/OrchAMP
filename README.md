@@ -13,3 +13,17 @@ To run the Jupyter notebooks in this repository, you need to set up a Python env
    Open your terminal (or Anaconda Prompt on Windows) and navigate to the directory containing the `OrchAMP.yml` file. Then, run the following command to create a virtual environment:
    ```bash
    conda env create -f OrchAMP.yml
+
+3. **Activate the Virtual Environment**:
+   Once the environment is created, activate it using the following command:
+   ```bash
+   conda activate OrchAMP
+
+4. **Run the Jupyter Notebooks**:
+   With the environment activated, you can now run the Jupyter notebooks. Start Jupyter Notebook by executing:
+   ```bash
+   jupyter notebook
+   
+   This will open the Jupyter Notebook interface in your web browser. From there, you can navigate to and run the .ipynb notebooks in this repository.
+
+By following these steps, you will ensure that the Jupyter notebooks run in the correct Python environment with all the necessary dependencies.
