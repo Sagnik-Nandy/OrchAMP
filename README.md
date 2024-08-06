@@ -26,6 +26,14 @@ To run the Jupyter notebooks in this repository, you need to set up a Python env
    
 This will open the Jupyter Notebook interface in your web browser. From there, you can navigate to and run the .ipynb notebooks in this repository.
 
-## Installation Guide
+## Data Source and Pre-processing Guide
 
-The raw TEA-seq dataset from [Swanson et. al. (2021)](https://elifesciences.org/articles/63632) used to generate Figures 1 and 2 of our paper is provided [here](https://www.dropbox.com/scl/fo/yu1vydyjhab0yxs9kyhoo/AOQwV-4cDz9GtjTRHmNawNg?rlkey=j7bbsfiwihwrzqzkqh4hj3e87&st=kb766idz&dl=0).
+The raw TEA-seq dataset from [Swanson et al. (2021)](https://elifesciences.org/articles/63632), used to generate Figures 1 and 2 of our paper, is available [here](https://www.dropbox.com/scl/fo/yu1vydyjhab0yxs9kyhoo/AOQwV-4cDz9GtjTRHmNawNg?rlkey=j7bbsfiwihwrzqzkqh4hj3e87&st=kb766idz&dl=0). 
+
+The dataset includes:
+- `adt_counts.csv`: Provides the raw ADT counts (Protein modality).
+- `feature_matrix.h5`: Provides the raw RNA and ATAC counts.
+
+These datasets need to be pre-processed using standard Seurat pre-processing techniques, as described [here](https://www.sciencedirect.com/science/article/pii/S0092867421005833).
+
+To pre-process the data, run the provided R script `Pre-processing_tea_seq_data.R` located in the `Codes` folder.
