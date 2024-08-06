@@ -65,7 +65,7 @@ We illustrate this functionality by constructing a 95% prediction set for three 
 - `Double Negative T cell` (using the `RNA` modality)
 - `CD8 Effector cell` (using the `ATAC` modality)
 
-The prediction sets are visualized against the UMAP of the reference atlas through 500 points randomly sampled from them. 
+The prediction sets are visualized against the UMAP of the reference atlas through 500 points randomly sampled from them. For details of the visualization, please check our paper.
 
 To reproduce our results, you can run the Jupyter notebook `tea_seq_prediction.ipynb`. To reproduce Figure 2 from our paper, execute the R script `tea_seq_prediction_plotting.R` located in the `Code` folder. 
 
