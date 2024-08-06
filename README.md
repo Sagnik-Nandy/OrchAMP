@@ -26,4 +26,6 @@ To run the Jupyter notebooks in this repository, you need to set up a Python env
    
 This will open the Jupyter Notebook interface in your web browser. From there, you can navigate to and run the .ipynb notebooks in this repository.
 
-By following these steps, you will ensure that the Jupyter notebooks run in the correct Python environment with all the necessary dependencies.
+## Installation Guide
+
+The raw TEA-seq dataset from [Swanson et. al. (2021)](https://elifesciences.org/articles/63632) used to generate Figures 1 and 2 of our paper is provided in (https://www.dropbox.com/scl/fo/yu1vydyjhab0yxs9kyhoo/AOQwV-4cDz9GtjTRHmNawNg?rlkey=j7bbsfiwihwrzqzkqh4hj3e87&st=kb766idz&dl=0).
