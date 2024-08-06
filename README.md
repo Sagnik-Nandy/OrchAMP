@@ -41,7 +41,7 @@ These datasets need to be pre-processed using standard Seurat techniques, as des
 - **Selection**: Choosing highly variable genes, ATAC reads, and proteins for analysis.
 
 For a detailed explanation of the pre-processing steps, please refer to our paper.
-To pre-process the data, run the provided R script `Pre-processing_tea_seq_data.R` located in the `Codes` folder. After running the script you will get the following pre-processed datasets.
+To pre-process the data, run the provided R script `Pre-processing_tea_seq_data.R` located in the `Code` folder. After running the script you will get the following pre-processed datasets.
 
 - `cleaned_adt_tea_seq.csv`: Provides the pre-processed ADT counts (Protein modality).
 - `cleaned_atac_reads_tea_seq.h5ad`: Provides the pre-processed ATAC counts.
@@ -50,11 +50,11 @@ To pre-process the data, run the provided R script `Pre-processing_tea_seq_data.
 
 ## Multimodal Cell Atlas Building Using OrchAMP (Algorithm 1)
 
-Using the cleaned datasets, you can build a multimodal cell atlas as described in Section 3.2 of our paper by running the Jupyter notebook `tea_seq_atlas_building.ipynb` located in the `Codes` folder. The OrchAMP atlas is compared with the atlas produced by the WNN-based integration technique of [Hao et al. (2021)](https://www.sciencedirect.com/science/article/pii/S0092867421005833).
+Using the cleaned datasets, you can build a multimodal cell atlas as described in Section 3.2 of our paper by running the Jupyter notebook `tea_seq_atlas_building.ipynb` located in the `Code` folder. The OrchAMP atlas is compared with the atlas produced by the WNN-based integration technique of [Hao et al. (2021)](https://www.sciencedirect.com/science/article/pii/S0092867421005833).
 
 To compute the PCA embeddings required for the [WNN-based integration technique](https://www.sciencedirect.com/science/article/pii/S0092867421005833), run the notebook `tea_seq_atlas_building_wnn.ipynb`.
 
-To generate the UMAP plot shown in Figure 1 of our paper, execute the R script `tea_seq_atlas_plotting.R` found in the `Codes` folder.
+To generate the UMAP plot shown in Figure 1 of our paper, execute the R script `tea_seq_atlas_plotting.R` found in the `Code` folder.
 
 ## Querying Multimodal Atlas with New Cells (Algorithm 2)
 
@@ -67,5 +67,5 @@ We illustrate this functionality by constructing a 95% prediction set for three 
 
 The prediction sets are visualized against the UMAP of the reference atlas through 500 points randomly sampled from them. 
 
-To reproduce our results, you can run the Jupyter notebook `tea_seq_prediction.ipynb`. To reproduce Figure 2 from our paper, execute the R script `tea_seq_prediction_plotting.R` located in the `Codes` folder. 
+To reproduce our results, you can run the Jupyter notebook `tea_seq_prediction.ipynb`. To reproduce Figure 2 from our paper, execute the R script `tea_seq_prediction_plotting.R` located in the `Code` folder. 
 
