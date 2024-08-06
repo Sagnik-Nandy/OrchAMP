@@ -56,7 +56,16 @@ To compute the PCA embeddings required for the [WNN-based integration technique]
 
 To generate the UMAP plot shown in Figure 1 of our paper, execute the R script `tea_seq_atlas_plotting.R` found in the `Codes` folder.
 
-## Querying multimodal atlas with new cells (Algorithm 2)
+## Querying Multimodal Atlas with New Cells (Algorithm 2)
 
-One can build point predictions of the embeddings of a new query cell  
+Using Algorithm 2 from our paper, you can build point predictions of the embeddings for new query cells with partially observed modalities relative to the constructed multimodal atlas. Additionally, you can create a prediction set with the desired confidence level for such embeddings using the same algorithm.
+
+We illustrate this functionality by constructing a 95% prediction set for three test cells of different categories:
+- `pre-B cell` (using the `Protein` modality)
+- `Double Negative T cell` (using the `RNA` modality)
+- `CD8 Effector cell` (using the `ATAC` modality)
+
+The prediction sets are visualized against the UMAP of the reference atlas through 500 points randomly sampled from them. 
+
+To reproduce our results, you can run the Jupyter notebook `tea_seq_prediction.ipynb`. To reproduce Figure 2 from our paper, execute the R script `tea_seq_prediction_plotting.R` located in the `Codes` folder. 
 
