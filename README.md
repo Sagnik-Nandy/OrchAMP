@@ -24,6 +24,6 @@ To run the Jupyter notebooks in this repository, you need to set up a Python env
    ```bash
    jupyter notebook
    
-   This will open the Jupyter Notebook interface in your web browser. From there, you can navigate to and run the .ipynb notebooks in this repository.
+This will open the Jupyter Notebook interface in your web browser. From there, you can navigate to and run the .ipynb notebooks in this repository.
 
 By following these steps, you will ensure that the Jupyter notebooks run in the correct Python environment with all the necessary dependencies.
