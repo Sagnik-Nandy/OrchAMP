@@ -142,7 +142,7 @@ cell_names_modified = cell_names_train
 
 # Read in the AMP embeddings
 
-amp_embedding_raw = read.csv("amp_for_prediction_tea_seq_analysis_bcp.csv")
+amp_embedding_raw = read.csv("amp_for_prediction.csv")
 amp_embedding_raw = amp_embedding_raw[,-1]     
 rownames(amp_embedding_raw) = paste("p", 1:1:dim(amp_embedding_raw)[1])
 
