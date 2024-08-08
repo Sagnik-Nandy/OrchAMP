@@ -227,7 +227,7 @@ p1 = DimPlot(data_x,group.by=cell_names,pt.size=0.04,cols = col_vector[11:40])+g
 
 # Computes AMP UMAP
 
-jt_embedding_gmm = read.csv("amp_for_prediction_job_talk_gmm.csv")
+jt_embedding_gmm = read.csv("amp_gmm.csv")
 jt_embedding_gmm = jt_embedding_gmm[,-1]
 data_together_pca = jt_embedding_gmm
 rownames(data_together_pca) = paste("p", 1:1:dim(data_together_pca)[1])
