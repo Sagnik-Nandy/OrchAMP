@@ -74,8 +74,9 @@ The repository contains three subfolders `Python_Scripts`, `Slurm_Scripts` and `
    
 3. The results from the cluster can be unified by running the Jupyter notebooks `combine_effect_of_data_integration.ipynb` (Table 1) and `combine_calibration_results.ipynb` (Table 2).
 
+## TEA-seq data analysis
 
-## Data Source and Pre-processing Guide
+### Data Source and Pre-processing Guide
 
 The raw TEA-seq dataset from [Swanson et al. (2021)](https://elifesciences.org/articles/63632), used to generate Figures 1 and 2 of our paper, is available [here]([https://www.dropbox.com/scl/fo/yu1vydyjhab0yxs9kyhoo/AOQwV-4cDz9GtjTRHmNawNg?rlkey=j7bbsfiwihwrzqzkqh4hj3e87&st=kb766idz&dl=0](https://www.dropbox.com/home/PhD%20Projects/Current_Projects_with_Seniors/AMP%2BMultimodal_Data/Data_codes_cmp_norm/Tea_seq_detailed_ablation_3pct/Preprocessing)).
 
@@ -97,24 +98,24 @@ To pre-process the data, run the provided R script `Pre-processing_tea_seq_data.
 - `cleaned_rna_reads_tea_seq.h5ad`: Provides the pre-processed RNA counts.
 - `cleaned_cell_labels_meta_tea_seq.csv`: Provides the cell-type of the cells used in the analysis.
 
-## Multimodal Cell Atlas Building Using OrchAMP (Algorithm 1)
+### Multimodal Cell Atlas Building Using OrchAMP (Algorithm 1)
 
-Using the cleaned datasets, you can build a multimodal cell atlas as described in Section 3.2 of our paper by running the Jupyter notebook `tea_seq_atlas_building.ipynb` located in the `Code` folder. The OrchAMP atlas is compared with the atlas produced by the WNN-based integration technique of [Hao et al. (2021)](https://www.sciencedirect.com/science/article/pii/S0092867421005833).
+Using the cleaned datasets, you can build a multimodal cell atlas as described in Section 4.1 of our paper by running the Jupyter notebook `tea_seq_integration_analysis_gmm.ipynb` located in the `tea_seq` folder. The OrchAMP atlas is compared with the atlas produced by the WNN-based integration technique of [Hao et al. (2021)](https://www.sciencedirect.com/science/article/pii/S0092867421005833).
 
-To compute the PCA embeddings required for the [WNN-based integration technique](https://www.sciencedirect.com/science/article/pii/S0092867421005833), run the notebook `tea_seq_atlas_building_wnn.ipynb`.
+The PCA embeddings required for the [WNN-based integration technique](https://www.sciencedirect.com/science/article/pii/S0092867421005833), is also compute by `tea_seq_integration_analysis_gmm.ipynb`. We also benchmark against [MOFA+](https://pubmed.ncbi.nlm.nih.gov/32393329/).  
 
-To generate the UMAP plot shown in Figure 1 of our paper, execute the R script `tea_seq_atlas_plotting.R` found in the `Code` folder.
+To generate the UMAP plot shown in Figure 1 of our paper, execute the R script `plot_for_tea_seq.R` found in the `tea_seq` folder.
 
-## Querying Multimodal Atlas with New Cells (Algorithm 2)
+### Querying Multimodal Atlas with New Cells (Algorithm 2)
 
 Using Algorithm 2 from our paper, you can build point predictions of the embeddings for new query cells with partially observed modalities relative to the constructed multimodal atlas. Additionally, you can create a prediction set with the desired confidence level for such embeddings using the same algorithm.
 
 We illustrate this functionality by constructing a 95% prediction set for three test cells of different categories:
-- `pre-B cell` (using the `Protein` modality)
-- `Double Negative T cell` (using the `RNA` modality)
-- `CD8 Effector cell` (using the `ATAC` modality)
+- `pre-B cell` 
+- `Double Negative T cell` 
+- `CD8 Effector cell` 
 
 The prediction sets are visualized against the UMAP of the reference atlas through 500 points randomly sampled from them. For details of the visualization, please check our paper.
 
-To reproduce our results, you can run the Jupyter notebook `tea_seq_prediction.ipynb`. To reproduce Figure 2 from our paper, execute the R script `tea_seq_prediction_plotting.R` located in the `Code` folder. 
+To reproduce our results, you can run the Jupyter notebook `tea_seq_prediction.ipynb`. To reproduce Figure 2 (`Double Negative T cell`) from our paper, execute the R script `prediction_plot_dnt.R` located in the `tea_seq` folder. Similar plots for `pre-B cell` can be obtained by running `prediction_plot_pbc.R` and `CD8 Effector cell` by running `prediction_plot_cd8e.R`.
 
