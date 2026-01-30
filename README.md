@@ -14,17 +14,17 @@ This repository contains three parts: simulation, analysis of TEA-seq data and a
 2. **Create the Virtual Environment**:
   1. From the root of the repository, run:
     ```bash
-    python -m venv orchamp-simulation
+       python -m venv orchamp-simulation
 
 3. **Activate the Virtual Environment**:
    Once the environment is created, activate it using the following command:
    ```bash
-   conda activate orchamp-simulation
+      conda activate orchamp-simulation
 
 4. **Install required packages**:
    You can install the required packages using
    ```bash
-   pip install numpy scipy matplotlib pandas scikit-learn seaborn tqdm scanpy
+      pip install numpy scipy matplotlib pandas scikit-learn seaborn tqdm scanpy
    
 5. **R Installation and rpy2**:
    You might need to install `R` in the virtual environment and install the package `rpy2`.
