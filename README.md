@@ -102,7 +102,7 @@ To pre-process the data, run the provided R script `Pre-processing_tea_seq_data.
 
 Using the cleaned datasets, you can build a multimodal cell atlas as described in Section 4.1 of our paper by running the Jupyter notebook `tea_seq_integration_analysis_gmm.ipynb` located in the `tea_seq` folder. The OrchAMP atlas is compared with the atlas produced by the WNN-based integration technique of [Hao et al. (2021)](https://www.sciencedirect.com/science/article/pii/S0092867421005833).
 
-The PCA embeddings required for the [WNN-based integration technique](https://www.sciencedirect.com/science/article/pii/S0092867421005833), is also compute by `tea_seq_integration_analysis_gmm.ipynb`. We also benchmark against [MOFA+](https://pubmed.ncbi.nlm.nih.gov/32393329/).  
+The PCA embeddings required for the [WNN-based integration technique](https://www.sciencedirect.com/science/article/pii/S0092867421005833), is also compute by `tea_seq_integration_analysis_gmm.ipynb`. We also benchmark against [MOFA+](https://pubmed.ncbi.nlm.nih.gov/32393329/). The `MOFA+` embeddings can be obtained by running `tea_seq_mofa_integration.R`.
 
 To generate the UMAP plot shown in Figure 1 of our paper, execute the R script `plot_for_tea_seq.R` found in the `tea_seq` folder.
 
