@@ -14,17 +14,17 @@ This repository contains three parts: simulation, analysis of TEA-seq data and a
 2. **Create the Virtual Environment**:
   1. From the root of the repository, run:
     ```bash
-       python -m venv orchamp-simulation
+     python -m venv orchamp-simulation
 
 3. **Activate the Virtual Environment**:
    Once the environment is created, activate it using the following command:
    ```bash
-      conda activate orchamp-simulation
+   conda activate orchamp-simulation
 
 4. **Install required packages**:
    You can install the required packages using
    ```bash
-      pip install numpy scipy matplotlib pandas scikit-learn seaborn tqdm scanpy
+   pip install numpy scipy matplotlib pandas scikit-learn seaborn tqdm scanpy
    
 5. **R Installation and rpy2**:
    You might need to install `R` in the virtual environment and install the package `rpy2`.
@@ -39,17 +39,17 @@ The data analysis is based on Jupyter notebooks and we provide a `.yml` file wit
 
 2. **Create the Virtual Environment**: Open your terminal (or Anaconda Prompt on Windows) and navigate to the directory containing the OrchAMP.yml file. Then, run the following command to create a virtual environment:
    ```bash
-      conda env create -f OrchAMP.yml
+   conda env create -f OrchAMP.yml
    
 3. **Activate the Virtual Environment**:
    Once the environment is created, activate it using the following command:
    ```bash
-      conda activate OrchAMP
+   conda activate OrchAMP
    
 4. **Run the Jupyter Notebooks**:
    With the environment activated, you can now run the Jupyter notebooks. Start Jupyter Notebook by executing:
    ```bash
-      jupyter notebook
+   jupyter notebook
    
 This will open the Jupyter Notebook interface in your web browser. From there, you can navigate to and run the .ipynb notebooks in this repository.
 
