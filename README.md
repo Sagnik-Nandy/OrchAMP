@@ -62,6 +62,7 @@ The repository contains three subfolders `Python_Scripts`, `Slurm_Scripts` and `
 2. The `Slurm_Scripts` folder contain the scripts used to run the python scripts in the ASC UNITY cluster of Ohio State University. You can open the terminal. Navigate to the repository where the slurm scripts live. You can run `effect_of_data_integration.py` by executing the script `effect_of_data_integration.sh` as follows:
    ```bash
    sbatch effect_of_data_integration.sh
+   
    You can run `pred_set.py` by executing the script `pred_set_experiment.sh` as follows:
    ```bash
    sbatch pred_set_experiment.sh
