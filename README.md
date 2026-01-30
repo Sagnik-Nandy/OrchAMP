@@ -40,16 +40,19 @@ The data analysis is based on Jupyter notebooks and we provide a `.yml` file wit
 2. **Create the Virtual Environment**: Open your terminal (or Anaconda Prompt on Windows) and navigate to the directory containing the OrchAMP.yml file. Then, run the following command to create a virtual environment:
    ```bash
    conda env create -f OrchAMP.yml
+   ```
    
 3. **Activate the Virtual Environment**:
    Once the environment is created, activate it using the following command:
    ```bash
    conda activate OrchAMP
+   ```
    
 4. **Run the Jupyter Notebooks**:
    With the environment activated, you can now run the Jupyter notebooks. Start Jupyter Notebook by executing:
    ```bash
    jupyter notebook
+   ```
    
 This will open the Jupyter Notebook interface in your web browser. From there, you can navigate to and run the .ipynb notebooks in this repository.
 
@@ -62,10 +65,12 @@ The repository contains three subfolders `Python_Scripts`, `Slurm_Scripts` and `
 2. The `Slurm_Scripts` folder contain the scripts used to run the python scripts in the ASC UNITY cluster of Ohio State University. You can open the terminal. Navigate to the repository where the slurm scripts live. You can run `effect_of_data_integration.py` by executing the script `effect_of_data_integration.sh` as follows:
    ```bash
    sbatch effect_of_data_integration.sh
+   ```
    
    You can run `pred_set.py` by executing the script `pred_set_experiment.sh` as follows:
    ```bash
    sbatch pred_set_experiment.sh
+   ```
    
 3. The results from the cluster can be unified by running the Jupyter notebooks `combine_effect_of_data_integration.ipynb` (Table 1) and `combine_calibration_results.ipynb` (Table 2).
 
