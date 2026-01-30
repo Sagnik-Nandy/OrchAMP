@@ -53,6 +53,22 @@ The data analysis is based on Jupyter notebooks and we provide a `.yml` file wit
    
 This will open the Jupyter Notebook interface in your web browser. From there, you can navigate to and run the .ipynb notebooks in this repository.
 
+## Running the simulation
+
+The repository contains three subfolders `Python_Scripts`, `Slurm_Scripts` and `Jupyter_Notebooks`. 
+
+1. The `Python_Scripts` folder contain the main files that are used to run the simulations. In particular, `effect_of_data_integration.py` is used for generating Table 1 in the manuscript (comparison of data integration methods) and `pred_set.py` is used for generating Table 2 of the manuscript (empirical coverage of the prediction sets).
+
+2. The `Slurm_Scripts` folder contain the scripts used to run the python scripts in the ASC UNITY cluster of Ohio State University. You can open the terminal. Navigate to the repository where the slurm scripts live. You can run `effect_of_data_integration.py` by executing the script `effect_of_data_integration.sh` as follows:
+   ```bash
+   sbatch effect_of_data_integration.sh
+   You can run `pred_set.py` by executing the script `pred_set_experiment.sh` as follows:
+   ```bash
+   sbatch pred_set_experiment.sh
+   
+3. The results from the cluster can be unified by running the Jupyter notebooks `combine_effect_of_data_integration.ipynb` (Table 1) and `combine_calibration_results.ipynb` (Table 2).
+
+
 ## Data Source and Pre-processing Guide
 
 The raw TEA-seq dataset from [Swanson et al. (2021)](https://elifesciences.org/articles/63632), used to generate Figures 1 and 2 of our paper, is available [here](https://www.dropbox.com/scl/fo/yu1vydyjhab0yxs9kyhoo/AOQwV-4cDz9GtjTRHmNawNg?rlkey=j7bbsfiwihwrzqzkqh4hj3e87&st=kb766idz&dl=0).
