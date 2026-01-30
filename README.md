@@ -4,25 +4,52 @@ This GitHub repository contains codes for implementing the techniques for buildi
 
 ## Installation Guide
 
-To run the Jupyter notebooks in this repository, you need to set up a Python environment using the `OrchAMP.yml` file. Follow these steps to create and activate the virtual environment:
+This repository contains three parts: simulation, analysis of TEA-seq data and analysis of CITE-seq data. The simulation part is based on python scripts that were executed on ASC Unity cluster of Ohio State University. 
+
+### Setting up python environment for simulation
 
 1. **Install Anaconda or Miniconda**:
    If you haven't already, download and install [Anaconda](https://www.anaconda.com/products/distribution) or [Miniconda](https://docs.conda.io/en/latest/miniconda.html).
 
 2. **Create the Virtual Environment**:
-   Open your terminal (or Anaconda Prompt on Windows) and navigate to the directory containing the `OrchAMP.yml` file. Then, run the following command to create a virtual environment:
-   ```bash
-   conda env create -f OrchAMP.yml
+  1. From the root of the repository, run:
+    ```bash
+    python -m venv orchamp-simulation
 
 3. **Activate the Virtual Environment**:
    Once the environment is created, activate it using the following command:
    ```bash
-   conda activate OrchAMP
+   conda activate orchamp-simulation
 
+4. **Install required packages**:
+   You can install the required packages using
+   ```bash
+   pip install numpy scipy matplotlib pandas scikit-learn seaborn tqdm scanpy
+   
+5. **R Installation and rpy2**:
+   You might need to install `R` in the virtual environment and install the package `rpy2`.
+
+
+### Setting up Python environment for data analysis
+
+The data analysis is based on Jupyter notebooks and we provide a `.yml` file with required dependencies.
+
+1. **Install Anaconda or Miniconda**:
+   If you haven't already, download and install [Anaconda](https://www.anaconda.com/products/distribution) or [Miniconda](https://docs.conda.io/en/latest/miniconda.html).
+
+2. **Create the Virtual Environment**: Open your terminal (or Anaconda Prompt on Windows) and navigate to the directory containing the OrchAMP.yml file. Then, run the following command to create a virtual environment:
+   ```bash
+      conda env create -f OrchAMP.yml
+   
+3. **Activate the Virtual Environment**:
+   Once the environment is created, activate it using the following command:
+   ```bash
+      conda activate OrchAMP
+   
 4. **Run the Jupyter Notebooks**:
    With the environment activated, you can now run the Jupyter notebooks. Start Jupyter Notebook by executing:
    ```bash
-   jupyter notebook
+      jupyter notebook
    
 This will open the Jupyter Notebook interface in your web browser. From there, you can navigate to and run the .ipynb notebooks in this repository.
 
