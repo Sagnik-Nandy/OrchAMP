@@ -77,7 +77,7 @@ The repository contains three subfolders `Python_Scripts`, `Slurm_Scripts` and `
 
 ## Data Source and Pre-processing Guide
 
-The raw TEA-seq dataset from [Swanson et al. (2021)](https://elifesciences.org/articles/63632), used to generate Figures 1 and 2 of our paper, is available [here](https://www.dropbox.com/scl/fo/yu1vydyjhab0yxs9kyhoo/AOQwV-4cDz9GtjTRHmNawNg?rlkey=j7bbsfiwihwrzqzkqh4hj3e87&st=kb766idz&dl=0).
+The raw TEA-seq dataset from [Swanson et al. (2021)](https://elifesciences.org/articles/63632), used to generate Figures 1 and 2 of our paper, is available [here]([https://www.dropbox.com/scl/fo/yu1vydyjhab0yxs9kyhoo/AOQwV-4cDz9GtjTRHmNawNg?rlkey=j7bbsfiwihwrzqzkqh4hj3e87&st=kb766idz&dl=0](https://www.dropbox.com/home/PhD%20Projects/Current_Projects_with_Seniors/AMP%2BMultimodal_Data/Data_codes_cmp_norm/Tea_seq_detailed_ablation_3pct/Preprocessing)).
 
 The dataset includes:
 - `adt_counts.csv`: Contains raw ADT counts (Protein modality).
