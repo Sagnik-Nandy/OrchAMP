@@ -122,7 +122,7 @@ To reproduce our results, you can run the Jupyter notebook `tea_seq_prediction.i
 ## CITE-seq analysis
 
 ### Data source
-We provide the pre-processed CITE-seq dataset from [Hao et al. (2021)](https://www.sciencedirect.com/science/article/pii/S0092867421005833) [here](https://www.dropbox.com/home/PhD%20Projects/Current_Projects_with_Seniors/AMP%2BMultimodal_Data/Data_CITE_seq_GITHUB). (**Please download the data from the provided url. The raw data cannot be uploaded due to size constraints**).
+We provide the pre-processed CITE-seq dataset from [Hao et al. (2021)](https://www.sciencedirect.com/science/article/pii/S0092867421005833) [here](https://www.dropbox.com/scl/fo/2abwcfdsjw842mton22dh/AIK8BlArpB0WilaYe5KiUQA?rlkey=vqo5uscjv3msq4st65e7vgi3y&st=mmv06py5&dl=0). (**Please download the data from the provided url. The raw data cannot be uploaded due to size constraints**).
 
 We have subsampled 10,000 cells randomly from the database after pre-processing using the standard steps described in [Hao et al. (2021)](https://www.sciencedirect.com/science/article/pii/S0092867421005833). 
 
